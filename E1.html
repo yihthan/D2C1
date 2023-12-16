@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+</head>
+
+<body>
+<a-scene>
+<!-- Asset Management-->
+    <a-assets>
+<!-- Ground-->
+<img id="skytexture" src="/image/office.jpg">
+<img id="floor" src="/image/box.jpg">
+    </a-assets>
+<a-plane src="#floor" shader="flat" position="-3 -1 -3" rotation="-90 0 0" scale="1.5 1.5 1.5"></a-plane>
+
+<!-- Camera -->
+
+
+<a-sphere position="7 -2 6" radius="0.5" color="blue"></a-sphere>
+
+<a-sky src="#skytexture"></a-sky>
+
+</a-scene>
+</body>
+</html>
